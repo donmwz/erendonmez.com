@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eren Dönmez — Veri & Yazılım</title>
+
+  <meta name="description"
+        content="Eren Dönmez — Yönetim Bilişim Sistemleri öğrencisi. Python, FastAPI ve veri bilimi ile uygulama geliştiren yazılım geliştirici. İstanbul.">
+  <meta name="author" content="Eren Dönmez">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#090D16">
+  <link rel="canonical" href="https://erendonmez.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://erendonmez.com/">
+  <meta property="og:title" content="Eren Dönmez — Veri & Yazılım">
+  <meta property="og:description"
+        content="Yazılım ve veri bilimi üzerine çalışan geliştirici. Python, FastAPI, kurumsal BT ve girişim deneyimi.">
+  <meta property="og:site_name" content="Eren Dönmez">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Eren Dönmez — Veri & Yazılım">
+  <meta name="twitter:description"
+        content="Yazılım ve veri bilimi üzerine çalışan geliştirici. İstanbul.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Eren Dönmez",
+        "url": "https://erendonmez.com/",
+        "inLanguage": "tr-TR"
+      },
+      {
+        "@type": "Person",
+        "name": "Eren Dönmez",
+        "url": "https://erendonmez.com/",
+        "email": "mailto:eren34dnmz@gmail.com",
+        "jobTitle": "Yazılım Geliştirici",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "İstanbul",
+          "addressCountry": "TR"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Altınbaş Üniversitesi"
+        },
+        "sameAs": [
+          "https://github.com/donmwz",
+          "https://linkedin.com/in/donmwz"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <base target="_blank">
+</head>
+
+<body>
+
+<header class="site">
+  <nav class="wrap">
+
+    <a href="#top" class="brand">
+      eren<span>.</span>dönmez
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#egitim">Eğitim</a></li>
+      <li><a href="#deneyim">Deneyim</a></li>
+      <li><a href="#projeler">Projeler</a></li>
+      <li><a href="#yetkinlikler">Yetkinlikler</a></li>
+      <li><a href="#yayinlar">Yayınlar</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+
+    <button
+      class="theme-toggle"
+      id="themeToggle"
+      aria-label="Temayı değiştir"
+      title="Temayı değiştir">
+
+      <svg class="sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="5"/>
+        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+
+      <svg class="moon" viewBox="0 0 24 24">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+
+    </button>
+
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Menüyü aç/kapat"
+      aria-expanded="false">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </nav>
+</header>
+
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:none;">
+
+    <canvas id="fieldCanvas" aria-hidden="true"></canvas>
+
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+
+    <div class="wrap hero-content">
+
+      <p class="eyebrow hero-in d1">
+        Pendik / İstanbul
+      </p>
+
+      <h1 class="hero-title">
+
+        <span class="line hero-in d2">
+          Kod yazıyor,
+        </span>
+
+        <span class="line hero-in d3">
+          veriyi <em>anlamlandırıyor</em>,
+        </span>
+
+        <span class="line hero-in d4">
+          sistemleri inşa ediyorum.
+        </span>
+
+      </h1>
+
+      <p class="role hero-in d5">
+        Yönetim Bilişim Sistemleri · Altınbaş Üniversitesi
+      </p>
+
+      <p class="lead hero-in d6">
+        Python ve FastAPI ile veri odaklı uygulamalar geliştiriyorum.
+        Staj deneyimlerimde kurumsal sistemlerle çalıştım, girişimcilik
+        sürecinde veriyi ürüne dönüştürdüm. Şu anda Veri Bilimi Kulübü'nü
+        yönetiyor ve yeni projeler üzerinde çalışıyorum.
+      </p>
+
+      <div class="hero-cta hero-in d6">
+
+        <a
+          class="btn primary"
+          href="mailto:eren34dnmz@gmail.com">
+          E-posta gönder
+        </a>
+
+        <a
+          class="btn ghost"
+          href="https://github.com/donmwz"
+          target="_blank"
+          rel="noopener">
+          GitHub
+        </a>
+
+        <a
+          class="btn ghost"
+          href="https://linkedin.com/in/donmwz"
+          target="_blank"
+          rel="noopener">
+          LinkedIn
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span></span>
+    </div>
+
+  </section>
+
+
+  <!-- EĞİTİM -->
+  <section id="egitim">
+
+    <div class="wrap">
+
+      <div class="section-head reveal">
+
+        <div>
+          <p class="eyebrow">Akademik</p>
+          <h2>Eğitim</h2>
+        </div>
+
+      </div>
+
+      <div class="edu-item reveal">
+
+        <div class="edu-meta">
+          <span class="date">2023 — Halen</span>
+          <span class="edu-status">Devam ediyor</span>
+        </div>
+
+        <div class="edu-body">
+
+          <h3>Yönetim Bilişim Sistemleri (Lisans)</h3>
+
+          <div class="org-row">
+            <div class="badge-logo">
+              <img
+                src="images/altinbas_universitesi.png"
+                alt="Altınbaş Üniversitesi logosu">
+            </div>
+            <div class="org">
+              Altınbaş Üniversitesi · Uygulamalı Bilimler Fakültesi
+            </div>
+          </div>
+
+          <p class="edu-gpa">GANO: 3.31</p>
+
+          <p class="edu-desc">
+            Veri analitiği, yazılım geliştirme, bilgi sistemleri yönetimi
+            ve iş zekası alanlarında uygulamalı dersler alarak teknoloji
+            ve iş dünyasını birleştiren projeler geliştiriyorum.
+          </p>
+
+          <p class="edu-loc">İstanbul</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DENEYİM -->
+  <section id="deneyim">
+
+    <div class="wrap">
+
+      <div class="section-head reveal">
+
+        <div>
+          <p class="eyebrow">Kronoloji</p>
+          <h2>Deneyim</h2>
+        </div>
+
+        <p class="section-note">
+          Stajlardan girişime — yazılım, veri ve kurumsal BT’de
+          uygulamalı roller.
+        </p>
+
+      </div>
+
+
+      <div class="timeline">
+
+        <!-- ÇAMLICA BARKOD -->
+        <div class="titem reveal">
+
+          <div class="date">
+            Ağu 2026 — Eyl 2026
+          </div>
+
+          <div>
+
+            <h3>Yazılım Stajyeri</h3>
+
+            <div class="org-row">
+
+              <div class="badge-logo">
+                <img
+                  src="images/camlica_barkod.jpg"
+                  alt="Çamlıca Barkod logosu">
+              </div>
+
+              <div class="org">
+                Çamlıca Barkod
+              </div>
+
+            </div>
+
+            <ul>
+
+              <li>
+                Python ile uygulama geliştirme, REST API entegrasyonu
+                ve veri işleme süreçlerinde görev aldım.
+              </li>
+
+              <li>
+                Selenium, Requests, BeautifulSoup ve Pandas ile
+                web otomasyonu ve veri çekme süreçleri geliştirdim.
+              </li>
+
+              <li>
+                Git/GitHub ile versiyon kontrolü ve hata yönetimi
+                süreçlerinde deneyim kazandım.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <!-- İSKİ -->
+        <div class="titem reveal">
+
+          <div class="date">
+            Haz 2026 — Ağu 2026
+          </div>
+
+          <div>
+
+            <h3>Bilgi Teknolojileri Stajyeri</h3>
+
+            <div class="org-row">
+
+              <div class="badge-logo">
+                <img
+                  src="images/iski.jpg"
+                  alt="İSKİ logosu">
+              </div>
+
+              <div class="org">
+                İSKİ Genel Müdürlüğü
+              </div>
+
+            </div>
+
+            <ul>
+
+              <li>
+                Linux sunucuları ve Pardus işletim sistemi üzerinde
+                kurulum, yapılandırma ve kullanıcı yönetimi konusunda
+                uygulamalı deneyim edindim.
+              </li>
+
+              <li>
+                Kurumsal BT altyapısı, VDI teknolojileri ve bilgi
+                güvenliği süreçlerine destek verdim.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <!-- ALTINBAŞ -->
+        <div class="titem reveal">
+
+          <div class="date">
+            Şub 2026 — Haz 2026
+          </div>
+
+          <div>
+
+            <h3>Öğrenci Asistanı</h3>
+
+            <div class="org-row">
+
+              <div class="badge-logo">
+                <img
+                  src="images/altinbas_universitesi.png"
+                  alt="Altınbaş Üniversitesi logosu">
+              </div>
+
+              <div class="org">
+                Altınbaş Üniversitesi — Sürekli Eğitim Merkezi
+              </div>
+
+            </div>
+
+            <ul>
+
+              <li>
+                Pazar analizi ve rekabet araştırmaları ile yeni eğitim
+                programlarının konumlandırılmasına katkı sağladım.
+              </li>
+
+              <li>
+                Resmi web sitesi yönetimi ve içerik süreçlerinde aktif
+                rol aldım.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!-- TERCİH TANITIM -->
+<div class="titem reveal">
+
+  <div class="date">
+    Tem 2025 — Ağu 2025
+  </div>
+
+  <div>
+
+    <h3>Tercih Tanıtım ve Rehberlik Görevlisi</h3>
+
+    <div class="org-row">
+
+      <div class="badge-logo">
+        <img
+          src="images/altinbas.png"
+          alt="Altınbaş Üniversitesi logosu">
+      </div>
+
+      <div class="org">
+        Altınbaş Üniversitesi
+      </div>
+
+    </div>
+
+    <ul>
+
+      <li>
+        Üniversite tanıtım etkinliklerinde saha çalışması gerçekleştirerek
+        aday öğrencilere kampüs ve bölüm tanıtımlarında destek oldum.
+      </li>
+
+      <li>
+        Tercih ve tanıtım döneminde aday öğrencilerle iletişim kurarak
+        üniversite ve bölümler hakkında bilgi verdim.
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+        <!-- COMCAI -->
+        <div class="titem reveal">
+
+          <div class="date">
+            Şub 2025 — Mar 2026
+          </div>
+
+          <div>
+
+            <h3>Kurucu Ortak, Veri Bilimi Direktörü</h3>
+
+            <div class="org-row">
+
+              <div class="badge-logo">
+                <img
+                  src="images/comcai_logo.jpg"
+                  alt="Comcai logosu">
+              </div>
+
+              <div class="org">
+                Comcai — Tech İstanbul destekli girişim
+              </div>
+
+            </div>
+
+            <ul>
+
+              <li>
+                Çağrı merkezlerine yönelik yapay zekâ tabanlı CRM ve
+                karar destek sistemi geliştiren girişimin kurucu
+                ortaklarından biri oldum.
+              </li>
+
+              <li>
+                Veri analizi ve raporlama süreçlerinde görev alarak
+                veri odaklı ürün kararlarına katkı sağladım.
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJELER -->
+  <section id="projeler">
+
+    <div class="wrap">
+
+      <div class="section-head reveal">
+
+        <div>
+          <p class="eyebrow">Seçili işler</p>
+          <h2>Projeler</h2>
+        </div>
+
+        <p class="section-note">
+          Araştırma bütçesiyle yürütülen akademik bir proje ve uçtan
+          uca geliştirdiğim bir kişisel dashboard.
+        </p>
+
+      </div>
+
+
+      <div class="proj-grid">
+
+        <div class="card reveal">
+
+          <div class="tag">
+            BAP · Akademik Proje
+          </div>
+
+          <h3>
+            Kurumsal Karbon Ayak İzi Yönetim Sistemi
+          </h3>
+
+          <p>
+            Altınbaş Üniversitesi Bilimsel Araştırma Projeleri kapsamında,
+            kurumsal karbon emisyonlarını ölçümlemek için veri mimarisi
+            ve hesaplama algoritmaları geliştirdiğim, bütçe destekli bir
+            araştırma projesi. Sonuçların görselleştirildiği web tabanlı
+            bir raporlama modülü de bu çalışmanın parçası.
+          </p>
+
+          <div class="chip-row">
+
+            <span class="chip">Python</span>
+            <span class="chip">Veri Mimarisi</span>
+            <span class="chip">Web Raporlama</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="card reveal">
+
+          <div class="tag">
+            Kişisel Proje · 2026
+          </div>
+
+          <h3>
+            Kişiselleştirilebilir Finans & Bilgi Dashboard'u
+          </h3>
+
+          <p>
+            Finans, döviz, kripto, altın, hava durumu ve haber verilerini
+            tek arayüzde toplayan bir dashboard. FastAPI tabanlı backend;
+            Open-Meteo, Frankfurter, GNews ve Genelpara gibi API'leri
+            tek servis katmanında birleştiriyor. Supabase Auth ile
+            kullanıcı girişi ve kişiselleştirme, sürükle-bırak modül
+            yönetimi.
+          </p>
+
+          <div class="chip-row">
+
+            <span class="chip">Vite</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">Supabase</span>
+            <span class="chip">Bootstrap/Tabler</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- YETKİNLİKLER -->
+  <section id="yetkinlikler">
+
+    <div class="wrap">
+
+      <div class="section-head reveal">
+
+        <div>
+          <p class="eyebrow">Araç kutusu</p>
+          <h2>Teknik yetkinlikler</h2>
+        </div>
+
+      </div>
+
+
+      <div class="skill-groups">
+
+        <div class="group reveal">
+
+          <div class="label">
+            Diller
+          </div>
+
+          <div class="chip-row">
+
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">C</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">MATLAB</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="group reveal">
+
+          <div class="label">
+            Geliştirme Araçları
+          </div>
+
+          <div class="chip-row">
+
+            <span class="chip">VS Code</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Vite</span>
+            <span class="chip">Power BI</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="group reveal">
+
+          <div class="label">
+            Teknolojiler & Framework'ler
+          </div>
+
+          <div class="chip-row">
+
+            <span class="chip">FastAPI</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Pardus</span>
+            <span class="chip">VDI</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">Supabase</span>
+            <span class="chip">SPSS</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- YAYINLAR -->
+  <section id="yayinlar">
+
+    <div class="wrap">
+
+      <div class="section-head reveal">
+
+        <div>
+          <p class="eyebrow">Akademik</p>
+          <h2>Yayınlar & kongre sunumları</h2>
+        </div>
+
+      </div>
+
+
+      <div class="pub reveal">
+
+        <div class="year">
+          2026
+        </div>
+
+        <div>
+
+          <h3>
+            <a href="https://drive.google.com/file/d/1QckN9nA9k0Wn2uq7x5XwnWxDRGDmWT8g/view" target="_blank">Design and Implementation of a Web-Based Corporate Carbon
+            Management System</a>
+          </h3>
+
+          <div class="venue">
+            6. Uluslararası Thales Fen, Mühendislik, Mimarlık ve Matematik
+            Kongresi — Sözlü Bildiri
+          </div>
+
+          <div class="authors">
+            Yıldız, İ., Özkan, E. H., Dönmez, E., Altınbaşak, E.
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="pub reveal">
+
+        <div class="year">
+          2026
+        </div>
+
+        <div>
+
+          <h3>
+            Yapay Zekâ Tabanlı Sohbet Botlarının Üniversite Öğrencileri
+            Üzerindeki Psikolojik Etkileri
+          </h3>
+
+          <div class="venue">
+            Makale çalışması
+          </div>
+
+          <div class="authors">
+            Dönmez, E.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LİDERLİK -->
+  <section>
+
+    <div class="wrap">
+
+      <div class="section-head reveal">
+
+        <div>
+          <p class="eyebrow">Topluluk</p>
+          <h2>Liderlik</h2>
+        </div>
+
+        <p class="section-note">
+          Öğrenci topluluklarında kuruculuk ve yönetim rolleri
+          üstlendiğim üç deneyim.
+        </p>
+
+      </div>
+
+
+      <div class="lead-grid">
+
+
+        <!-- VERİ BİLİMİ KULÜBÜ -->
+        <div class="lead-card reveal">
+
+          <div class="org-row">
+
+            <div class="badge-logo">
+              <img
+                src="images/veri_bilimi_kulubu.jpg"
+                alt="Veri Bilimi Kulübü logosu">
+            </div>
+
+            <div class="role" style="margin:0;">
+              Kurucu Başkan
+            </div>
+
+          </div>
+
+          <h3>
+            Veri Bilimi Kulübü
+          </h3>
+
+          <div class="when">
+            Şub 2025 — Halen
+          </div>
+
+          <p>
+            Kuruluş sürecini yöneterek yaklaşık 300 üyeye ulaşan bir
+            topluluk oluşturdu, veri bilimi odaklı etkinlikleri planladı.
+          </p>
+
+        </div>
+
+
+        <!-- BADİ ETKİNLİK -->
+        <div class="lead-card reveal">
+
+          <div class="org-row">
+
+            <div class="badge-logo">
+              <img
+                src="images/badi_logo.png"
+                alt="Badi Etkinlik logosu">
+            </div>
+
+            <div class="role" style="margin:0;">
+              Kampüs Lideri
+            </div>
+
+          </div>
+
+          <h3>
+            Badi Etkinlik
+          </h3>
+
+          <div class="when">
+            Şub 2025 — Şub 2026
+          </div>
+
+          <p>
+            Kampüs içi organizasyonların planlanması ve temsilci
+            ekibinin koordinasyonunu sağladı.
+          </p>
+
+        </div>
+
+
+        <!-- YAPAY ZEKA VE ROBOTİK -->
+        <div class="lead-card reveal">
+
+          <div class="org-row">
+
+            <div class="badge-logo">
+              <img
+                src="images/yapay_zeka_ve_robotik_kulubu.jpg"
+                alt="Yapay Zeka ve Robotik Kulübü logosu">
+            </div>
+
+            <div class="role" style="margin:0;">
+              Başkan Yardımcısı
+            </div>
+
+          </div>
+
+          <h3>
+            Yapay Zeka ve Robotik Kulübü
+          </h3>
+
+          <div class="when">
+            Haz 2024 — Şub 2025
+          </div>
+
+          <p>
+            Kulüp etkinliklerinin ve organizasyonlarının yürütülmesine
+            katkı sağladı.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERTİFİKALAR -->
+  <section>
+
+    <div class="wrap">
+
+      <div class="section-head reveal">
+
+        <div>
+          <p class="eyebrow">Belgeler</p>
+          <h2>Sertifikalar & ödüller</h2>
+        </div>
+
+        <p class="section-note">
+          Veri bilimi, yapay zekâ ve yazılım alanlarında tamamlanan
+          eğitimler ve bir kulüp ödülü.
+        </p>
+
+      </div>
+
+
+      <ul class="simple-list reveal">
+
+        <li>
+          <span>
+            Teknolojide Fırsat Eşitliği
+            <span class="src">
+              — Bahçeşehir Üniversitesi
+            </span>
+          </span>
+
+          <span class="when">
+            Şub 2025
+          </span>
+        </li>
+
+
+        <li>
+          <span>
+            Yapay Zekaya İlk Adım
+            <span class="src">
+              — AI Business School
+            </span>
+          </span>
+
+          <span class="when">
+            Kas 2024
+          </span>
+        </li>
+
+
+        <li>
+          <span>
+            Python Programlama
+            <span class="src">
+              — ODTÜ & Bilge İş
+            </span>
+          </span>
+
+          <span class="when">
+            Eki 2024
+          </span>
+        </li>
+
+
+        <li>
+          <span>
+            Introduction to Machine Learning
+            <span class="src">
+              — AI Business School
+            </span>
+          </span>
+
+          <span class="when">
+            Haz 2025
+          </span>
+        </li>
+
+
+        <li>
+          <span>
+            Veri Okuryazarlığı Eğitimi
+            <span class="src">
+              — 23 – Yirmi Üç
+            </span>
+          </span>
+
+          <span class="when">
+            Şub 2026
+          </span>
+        </li>
+
+
+        <li>
+          <span>
+            En İyi İş Birliği Kulüp Ödülü
+            <span class="src">
+              — Altınbaş Üni. Öğrenci Dekanlığı,
+              YZ ve Robotik Kulübü
+            </span>
+          </span>
+
+          <span class="when">
+            Ödül
+          </span>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <!-- REFERANSLAR -->
+  <section id="referanslar">
+
+    <div class="wrap">
+
+      <div class="section-head reveal">
+
+        <div>
+          <p class="eyebrow">
+            Akademik danışmanlık
+          </p>
+
+          <h2>
+            Referanslar
+          </h2>
+
+        </div>
+
+        <p class="section-note">
+          Akademik ve profesyonel süreçlerde destek aldığım isimler.
+          Detay talep üzerine paylaşılır.
+        </p>
+
+      </div>
+
+
+      <div class="two-col">
+
+
+        <div class="ref-item reveal">
+
+          <div class="name">
+            İncilay Yıldız
+          </div>
+
+          <div class="role">
+            Altınbaş Üniversitesi — Dr. Öğr. Üyesi
+          </div>
+
+          <p class="ref-note">
+            İletişim bilgileri talep edildiğinde paylaşılacaktır.
+          </p>
+
+        </div>
+
+
+        <div class="ref-item reveal">
+
+          <div class="name">
+            Prof. Dr. Dicle Yurdakul
+          </div>
+
+          <div class="role">
+            Altınbaş Üniversitesi — SEM Müdürü
+          </div>
+
+          <p class="ref-note">
+            İletişim bilgileri talep edildiğinde paylaşılacaktır.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer id="iletisim">
+
+  <div class="wrap">
+
+    <div class="contact-grid">
+
+      <div class="reveal">
+
+        <p class="eyebrow">
+          Konuşalım
+        </p>
+
+        <h2>
+          Bir fikir, işbirliği ya da kısa bir merhaba — yazmanız yeterli.
+        </h2>
+
+        <p>
+          Yazılım, veri ve staj / iş birliği konularında e-posta veya
+          LinkedIn üzerinden yanıt veriyorum.
+        </p>
+
+      </div>
+
+
+      <ul class="contact-list reveal">
+
+        <li>
+
+          <span class="k">
+            E-posta
+          </span>
+
+          <a href="mailto:eren34dnmz@gmail.com">
+            eren34dnmz@gmail.com
+          </a>
+
+        </li>
+
+
+        <li>
+
+          <span class="k">
+            GitHub
+          </span>
+
+          <a
+            href="https://github.com/donmwz"
+            target="_blank"
+            rel="noopener">
+            github.com/donmwz
+          </a>
+
+        </li>
+
+
+        <li>
+
+          <span class="k">
+            LinkedIn
+          </span>
+
+          <a
+            href="https://linkedin.com/in/donmwz"
+            target="_blank"
+            rel="noopener">
+            linkedin.com/in/donmwz
+          </a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div class="fine">
+
+      <span>
+        © 2026 Eren Dönmez — Pendik, İstanbul
+      </span>
+
+      <span>
+        Yönetim Bilişim Sistemleri, Altınbaş Üniversitesi
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
