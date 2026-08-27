@@ -525,8 +525,8 @@
         </div>
 
         <p class="section-note">
-          Araştırma bütçesiyle yürütülen akademik bir proje ve uçtan
-          uca geliştirdiğim bir kişisel dashboard.
+          Akademik araştırma, kişisel dashboard ve Windows Event Log
+          izleme sistemi.
         </p>
 
       </div>
@@ -534,7 +534,7 @@
 
       <div class="proj-grid">
 
-        <div class="card reveal">
+        <article class="card reveal">
 
           <div class="tag">
             BAP · Akademik Proje
@@ -553,17 +553,21 @@
           </p>
 
           <div class="chip-row">
-
             <span class="chip">Python</span>
             <span class="chip">Veri Mimarisi</span>
             <span class="chip">Web Raporlama</span>
-
           </div>
 
-        </div>
+        </article>
 
 
-        <div class="card reveal">
+        <article
+          class="card reveal project-card"
+          tabindex="0"
+          role="button"
+          data-images="images/daily2.png, images/daily3.png, images/daily4.png"
+          data-title="Kişiselleştirilebilir Finans & Bilgi Dashboard'u"
+          aria-label="Proje görselini aç: Finans Dashboard">
 
           <div class="tag">
             Kişisel Proje · 2026
@@ -583,15 +587,71 @@
           </p>
 
           <div class="chip-row">
-
             <span class="chip">Vite</span>
             <span class="chip">FastAPI</span>
             <span class="chip">Supabase</span>
             <span class="chip">Bootstrap/Tabler</span>
-
           </div>
 
-        </div>
+          <div class="card-actions">
+            <span class="card-hint">Görseli gör</span>
+            <a
+              class="btn ghost card-github"
+              href="https://github.com/donmwz/DailyDashboard"
+              target="_blank"
+              rel="noopener"
+              data-stop-lightbox>
+              GitHub'da göster
+            </a>
+          </div>
+
+        </article>
+
+
+        <article
+          class="card reveal project-card"
+          tabindex="0"
+          role="button"
+          data-images="images/windows_event1.png, images/windows_event2.png"
+          data-title="Windows Event Log"
+          aria-label="Proje görselini aç: Windows Event Log">
+
+          <div class="tag">
+            Masaüstü · FastAPI · 2026
+          </div>
+
+          <h3>
+            Windows Event Log
+          </h3>
+
+          <p>
+            System, Application ve Security loglarını toplayıp gömülü
+            SQLite’ta saklayan, FastAPI + WebSocket ile canlı dashboard
+            üzerinden izlemenizi sağlayan sistem. Filtreleme, özet kartları,
+            grafikler ve bugün/dün karşılaştırması; Docker gerekmez,
+            portable exe veya setup ile kurulur.
+          </p>
+
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">WebSocket</span>
+          </div>
+
+          <div class="card-actions">
+            <span class="card-hint">Görseli gör</span>
+            <a
+              class="btn ghost card-github"
+              href="https://github.com/donmwz/Windows-Event-Log"
+              target="_blank"
+              rel="noopener"
+              data-stop-lightbox>
+              GitHub'da göster
+            </a>
+          </div>
+
+        </article>
 
       </div>
 
@@ -1162,6 +1222,50 @@
   </div>
 
 </footer>
+
+
+<!-- Project image lightbox -->
+<div
+  class="lightbox"
+  id="projectLightbox"
+  hidden
+  role="dialog"
+  aria-modal="true"
+  aria-label="Proje görseli">
+
+  <button
+    type="button"
+    class="lightbox-close"
+    id="lightboxClose"
+    aria-label="Kapat">
+    ×
+  </button>
+
+  <button
+    type="button"
+    class="lightbox-nav lightbox-prev"
+    id="lightboxPrev"
+    aria-label="Önceki görsel">
+    ‹
+  </button>
+
+  <figure class="lightbox-figure">
+    <img id="lightboxImage" src="" alt="">
+    <figcaption>
+      <span id="lightboxCaption"></span>
+      <span class="lightbox-count" id="lightboxCount"></span>
+    </figcaption>
+  </figure>
+
+  <button
+    type="button"
+    class="lightbox-nav lightbox-next"
+    id="lightboxNext"
+    aria-label="Sonraki görsel">
+    ›
+  </button>
+
+</div>
 
 
 <script src="script.js"></script>
